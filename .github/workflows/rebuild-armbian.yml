@@ -188,7 +188,7 @@ on:
       auto_kernel:
         description: "Auto use the latest kernel."
         required: false
-        default: true
+        default: false
         type: boolean
       kernel_repo:
         description: "Set the kernel repository."
@@ -197,6 +197,7 @@ on:
         type: choice
         options:
           - ophub/kernel
+          - cnwzhu/linux-6.1.y
       kernel_usage:
         description: "Set the tags of the stable kernel."
         required: false
@@ -231,7 +232,7 @@ on:
         options:
           - ophub
           - angel
-          - yourname
+          - cnwzhu
 
 env:
   TZ: America/New_York
