@@ -184,13 +184,6 @@ on:
           - 5.10.y
           - 5.15.y
           - 6.1.y
-          - 6.6.y
-          - 6.12.y
-          - 5.4.y_5.10.y
-          - 5.15.y_6.1.y
-          - 6.1.y_6.12.y
-          - 6.1.y_6.6.y
-          - 6.6.y_6.12.y
       auto_kernel:
         description: "Auto use the latest kernel."
         required: false
@@ -199,7 +192,7 @@ on:
       kernel_repo:
         description: "Set the kernel repository."
         required: false
-        default: "ophub/kernel"
+        default: "cnwzhu/amlogic-s9xxx-armbian"
         type: choice
         options:
           - ophub/kernel
@@ -233,7 +226,7 @@ on:
       builder_name:
         description: "Set Armbian builder signature."
         required: false
-        default: "ophub"
+        default: "cnwzhu"
         type: choice
         options:
           - ophub
